@@ -34,4 +34,3 @@ In lieu of slides, this tutorial uses interactive Jupyter notebooks. These noteb
 1. In a **ML-driven materials screening experiment**, you've made updates to an ML model after you've already started working with some of your screened materials. How will you track, manage, and reconcile different screening "runs" produced by different ML models?
 2. Some scientists in your computational & ML group are **experimenting with new ML models** that might outperform your previous models. How can you bake in some sanity checks before committing to "real" predictions on your dataset of materials and material properties, which you plan to send to your experimental-science collaborators?
 3. You've worked out a matured ML workflow, where you build new models regularly and leverage predictions on large materials datasets. Now your research team has grown to include more grad students, postdocs, and research scientists. **How can your systems scale alongside your team**?
-4. 
