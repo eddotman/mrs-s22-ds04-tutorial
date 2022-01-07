@@ -27,10 +27,36 @@ sanity checks for ML models before time and resources are committed for large pr
   + orchestrating ML pipelines to allow partial restarts (e.g., re-run predictions without
 retraining) and easier debugging.
 
-## Contents
+## Tutorial Contents
 
 In lieu of slides, this tutorial uses interactive Jupyter notebooks. These notebooks will be stepped through during the tutorial with opportunities for Q&A throughout. The tutorial considers three mock (but realistic!) scenarios:
 
 1. In a **ML-driven materials screening experiment**, you've made updates to an ML model after you've already started working with some of your screened materials. How will you track, manage, and reconcile different screening "runs" produced by different ML models?
 2. Some scientists in your computational & ML group are **experimenting with new ML models** that might outperform your previous models. How can you bake in some sanity checks before committing to "real" predictions on your dataset of materials and material properties, which you plan to send to your experimental-science collaborators?
 3. You've worked out a matured ML workflow, where you build new models regularly and leverage predictions on large materials datasets. Now your research team has grown to include more grad students, postdocs, and research scientists. **How can your systems scale alongside your team**?
+
+
+## Repo Contents
+
+This repo contains three folders, corresponding to the three above tutorial scenarios. Each folder has a self-contained Python notebook, a `requirements.txt` file (which specifies which Python libraries you need), and a `data/` folder which contains data files that are specific to each scenario.
+
+You can run any of the notebooks in any of the following ways:
+- Go to https://colab.research.google.com/ and make a new set of notebooks using the GitHub URL: https://github.com/eddotman/mrs-s22-ds04-tutorial/ 
+- Clone this repo to your local device, and run these notebooks on your local machine (or any machine you have access to)
+
+```
+- 01_tracking_predictions/
+|- notebook.ipynb
+|- requirements.txt
+|- data/
+
+- 02_testing_models/
+|- notebook.ipynb
+|- requirements.txt
+|- data/
+
+- 03_scaling_teams/
+|- notebook.ipynb
+|- requirements.txt
+|- data/
+```
