@@ -1,0 +1,15 @@
+{
+  "model_id": "27f49604-99df-4c90-91c2-353d8ae1295f",
+  "prediction_id": "28fb2aea-84bf-4e4e-9d9e-51f8dfc6228a",
+  "citation": "https://www.nature.com/articles/s43246-021-00219-x",
+  "prediction_result": {
+    "type": "binary_classification",
+    "name": "synthesizability",
+    "value": 0.39,
+   }
+  "prediction_input": {
+    "name": "Li3(WO3)8",
+    "mp_id": "mp-1222771_Li",
+    "material_id": "768a747c-015c-482c-acdf-bd4e7bbb4936"
+  }
+}
