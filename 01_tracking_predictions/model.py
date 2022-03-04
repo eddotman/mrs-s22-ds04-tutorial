@@ -1,10 +1,8 @@
 import random
 
-class MLModel:
+class SynthesizabilityModel:
   def __init__(self):
     random.seed(123)
   
-  def predict(self, data:list) -> list[float]:
-    return [
-      random.random() for d in data
-    ]
+  def predict_single(self, data_pt) -> float:
+    return random.random()
