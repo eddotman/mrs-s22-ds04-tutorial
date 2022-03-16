@@ -1,0 +1,10 @@
+{
+  "synthesizability_predictions": {
+    "Li7La3(SnO6)2": 0.15,
+    "Li3(WO3)8": 0.39,
+    "Li4Mn2P4H3O16": 1.00,
+    "Li2Ni(PO3)5": 1.00,
+    "MgV2O4": 0.22
+  },
+  "citation": "https://www.nature.com/articles/s43246-021-00219-x"
+}
