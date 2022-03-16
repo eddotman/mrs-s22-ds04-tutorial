@@ -2,12 +2,25 @@ import pytest
 from model import SynthesizabilityModel
 
 @pytest.fixture()
-def synthesizability_model():
+def model():
     model = SynthesizabilityModel()
     return model
 
 @pytest.mark.parametrize(
-    "input_val",
+    "material",
+    [
+        1234,
+        dict({"a":"b"}),
+        ["Fe2O3"],
+        ["Fe2", "O3"],
+    ]
+)
+def test_invalid_material(material:str, model:SynthesizabilityModel) -> None:
+    with pytest.raises(TypeError):
+        model.predict_single(material)
+
+@pytest.mark.parametrize(
+    "material",
     [
         "Li7La3(SnO6)2",
         "Li3(WO3)8",
@@ -16,6 +29,6 @@ def synthesizability_model():
         "MgV2O4",
     ]
 )
-def test_prediction_bounds(input_val:str) -> None:
-    predicted_value = synthesizability_model.predict_single(input_val)
+def test_prediction_bounds(material:str, model:SynthesizabilityModel) -> None:
+    predicted_value = model.predict_single(material)
     assert 0 <= predicted_value <= 1
